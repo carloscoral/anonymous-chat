@@ -1,23 +1,15 @@
 import React from 'react';
 import { LayoutContent } from '../styled-components/LayoutContent'
-import { useDispatch } from 'react-redux'
-import { loginAnonymous } from '../store/system/actions/system'
 import { Header } from '../styled-components/Header'
 
 function SingleChat () {
-  const dispatch = useDispatch();
-
-  const handleLogin = () => {
-    dispatch( loginAnonymous() );
-  };
-
   return (
     <LayoutContent>
       <Header borders={ true }>
+        <strong className="align-vertical">
+          <span className="material-icons icon">account_circle</span> Anonymous
+        </strong>
       </Header>
-      <button onClick={ handleLogin }>
-        Login
-      </button>
     </LayoutContent>
   )
 }

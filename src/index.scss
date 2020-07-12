@@ -46,6 +46,18 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box;
 }
 
+.align-vertical {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: $padding;
+  box-sizing: border-box;
+}
+
 .max-height {
   height: 100%;
+}
+
+.icon {
+  margin-right: 5px;
 }

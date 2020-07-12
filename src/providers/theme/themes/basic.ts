@@ -6,5 +6,8 @@ export default {
   boxShadowColor: 'rgba(20, 0, 20, 0.2)',
   boxShadowBottom: '0 3px 10px',
   boxShadowCenter: '0 0 10px',
+  boxShadowLinkHover: '0 0 12px 2px',
+  listItemActiveBackground: '#333',
+  listItemActiveColor: '#ddd',
   divider: 'rgba(20, 0, 20, 0.1)'
 };

@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
-import { SideNav } from '../styled-components/SideNav'
-import { ToggleButton } from '../styled-components/ToggleButton'
-import HeaderSideNav from './HeaderSideNav'
-import TabsChat from './TabsChat'
+import { SideNav } from '../../styled-components/SideNav'
+import { ToggleButton } from '../../styled-components/ToggleButton'
+import HeaderSideNav from '../HeaderSideNav'
+import TabsChat from '../TabsChat'
+import ChatList from '../ChatList'
+import './SideNavChat.scss';
 
 function SideNavChat () {
   const tabs = [ 'Users', 'Groups', 'Private' ];
@@ -22,10 +24,13 @@ function SideNavChat () {
             : <span className="material-icons">menu</span>
         }
       </ToggleButton>
-      <SideNav className="max-height" closed={ !open }>
+      <SideNav className="max-height side-nav" closed={ !open }>
         <HeaderSideNav />
         <h1 className="title padded"> Chats </h1>
         <TabsChat tabs={tabs} active={activeTab} setActiveTab={setActiveTab} />
+        <div className="list-container">
+          <ChatList />
+        </div>
       </SideNav>
     </div>
   )

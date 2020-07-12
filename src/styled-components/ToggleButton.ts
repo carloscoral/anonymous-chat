@@ -10,7 +10,7 @@ export const ToggleButton = styled.div<ToggleButtonStyle>`
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 80px;
+  top: 70px;
   right: 0;
   background-color: ${ props => props.background || props.theme.secondaryBackground };
   box-shadow: ${ props => props.theme.boxShadowCenter } ${ props => props.boxShadowColor || props.theme.boxShadowColor } inset;
