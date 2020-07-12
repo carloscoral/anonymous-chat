@@ -18,6 +18,8 @@ export const Header = styled(BoxShadow)<HeaderStyle>`
   border-left: 1px solid ${ props => props.borders ? props.theme.divider : props.backgroundColor || props.theme.background };
   border-right: 1px solid ${ props => props.borders ? props.theme.divider : props.backgroundColor || props.theme.background };
   box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 
   & > * {
     min-width: ${ props => props.width || '100%' };
