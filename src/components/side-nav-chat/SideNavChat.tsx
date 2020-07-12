@@ -5,6 +5,7 @@ import HeaderSideNav from '../HeaderSideNav'
 import TabsChat from '../TabsChat'
 import ChatList from '../ChatList'
 import './SideNavChat.scss';
+import SearchBar from '../search-bar/SearchBar'
 
 function SideNavChat () {
   const tabs = [ 'Users', 'Groups', 'Private' ];
@@ -13,6 +14,10 @@ function SideNavChat () {
 
   const toggleNav = () => {
     setOpen( !open );
+  }
+
+  const onSearchHandle = ( text: string ) => {
+    console.log( { search: text } );
   }
 
   return (
@@ -28,6 +33,7 @@ function SideNavChat () {
         <HeaderSideNav />
         <h1 className="title padded"> Chats </h1>
         <TabsChat tabs={tabs} active={activeTab} setActiveTab={setActiveTab} />
+        <SearchBar onSearch={ onSearchHandle } />
         <div className="list-container">
           <ChatList />
         </div>

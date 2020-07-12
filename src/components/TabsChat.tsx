@@ -14,6 +14,7 @@ function TabsChat ( { tabs, active, setActiveTab }: TabsProps ) {
         tabs.map( tab =>
           <li
             className={ active === tab ? 'active cursor' : 'cursor' }
+            key={tab}
             onClick={ () => setActiveTab( tab ) }
           >
             { tab }
