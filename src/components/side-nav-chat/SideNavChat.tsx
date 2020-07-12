@@ -5,7 +5,7 @@ import HeaderSideNav from '../HeaderSideNav'
 import TabsChat from '../TabsChat'
 import ChatList from '../ChatList'
 import './SideNavChat.scss';
-import SearchBar from '../search-bar/SearchBar'
+import SearchBar from '../SearchBar'
 
 function SideNavChat () {
   const tabs = [ 'Users', 'Groups', 'Private' ];

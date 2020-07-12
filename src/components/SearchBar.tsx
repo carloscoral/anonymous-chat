@@ -1,6 +1,5 @@
 import React, { ChangeEvent, useState } from 'react';
-import { Text } from '../../styled-components/Text'
-import './SearchBar.scss';
+import { TextInput } from '../styled-components/TextInput'
 
 interface SearchBarProps {
   onSearch: ( text: string ) => void
@@ -16,15 +15,15 @@ function SearchBar ( { onSearch }: SearchBarProps ) {
   };
 
   return (
-    <div className="search-bar">
-      <Text contrast className="material-icons icon">search</Text>
+    <TextInput shadow iconColor="#333">
+      <span className="material-icons icon">search</span>
       <input
         className="search-bar-input"
         type="text"
         value={ text }
         onChange={ handleInput }
       />
-    </div>
+    </TextInput>
   )
 }
 
