@@ -1,4 +1,5 @@
-##Anonymous chat
+
+#Anonymous chat
 
 Anonymous fake chat using different browser tabs <br>
 Demo: <http://carloscoral.github.io/anonymous-chat>
