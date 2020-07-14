@@ -3,6 +3,7 @@ import THEMES from '../../providers/theme/themeList'
 export interface User {
   id: string;
   username: string;
+  type?: string;
 }
 
 export interface SystemState {

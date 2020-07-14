@@ -1,3 +1,88 @@
+$padding: 10px;
+
 body {
   margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.subtitle {
+  margin-bottom: 10px;
+}
+
+.spaced {
+  margin-bottom: 10px;
+}
+
+.relative {
+  position: relative;
+}
+
+.padded {
+  padding: $padding $padding 0 $padding;
+  box-sizing: border-box;
+}
+
+.extend {
+  width: 100%;
+}
+
+.cursor {
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: $padding;
+  box-sizing: border-box;
+}
+
+.align-vertical {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: $padding;
+  box-sizing: border-box;
+}
+
+.max-height {
+  height: 100%;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.small {
+  font-size: 1.2em;
+}
+
+input, select {
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+
+  &:focus {
+    outline: none;
+  }
 }

@@ -2,6 +2,9 @@ import basic from './basic';
 
 export default {
   ...basic,
-  background: '#000',
-  color: '#ddd'
+  background: '#333',
+  secondaryBackground: '#2a2a2a',
+  color: '#ddd',
+  listItemActiveBackground: '#fff',
+  listItemActiveColor: '#333',
 };
