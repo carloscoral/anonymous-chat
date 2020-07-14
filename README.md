@@ -1,7 +1,9 @@
-#Anonymous chat
+##Anonymous chat
 
 Anonymous fake chat using different browser tabs <br>
 Demo: <http://carloscoral.github.io/anonymous-chat>
+
+Use power button to clear local storage.
 
 ## Available Scripts
 
