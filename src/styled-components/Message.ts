@@ -21,9 +21,32 @@ export const Message = styled.li<MessageStyle>`
     ? getGradient( props.theme.primary, props.theme.secondary )
     : props.theme.secondaryBackground )
 };
-  color: ${ props => props.color || props.theme.color };
+  color: ${ props => props.gradient ? '#fff' : props.color || props.theme.color };
   position: relative;
   align-self: ${ props => props.right ? 'flex-end' : 'flex-start' };
   border-radius: 5px;
   margin-bottom: 3px;
+  position: relative;
+
+  &:hover > .button {
+    opacity: 1;
+  }
+
+  & > .button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 0.8em;
+    color: red;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+    border-radius: 2px;
+  }
+
+  & > .message-info {
+    font-size: 0.7em;
+    text-align: right;
+  }
 `;

@@ -5,7 +5,7 @@ interface BoxShadowProps {
   boxShadowColor?: string;
 }
 
-const getShadowDirection = ( props: ThemedStyledProps<any, any> ) => {
+export const getShadowDirection = ( props: ThemedStyledProps<any, any> ) => {
   switch( props.directionShadow ) {
     case 'top':
       return props.theme.boxShadowTop;
